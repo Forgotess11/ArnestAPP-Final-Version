@@ -1,23 +1,55 @@
-'#' Lines starting with '#' are considered comments.
+# C++ objects and libs
+*.slo
+*.lo
+*.o
+*.a
+*.la
+*.lai
+*.so
+*.so.*
+*.dll
+*.dylib
+*.env
 
-'#' Ignore any file named foo.txt.
+# Qt-es
+object_script.*.Release
+object_script.*.Debug
+*_plugin_import.cpp
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qmlc
+*.jsc
+Makefile*
+*build-*
+*.qm
+*.prl
 
-foo.txt
+# Qt unit tests
+target_wrapper.*
 
-'#' Ignore (generated) html files,
+# QtCreator
+*.autosave
 
-*.html
+# QtCreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
 
-'#' except foo.html which is maintained by hand.
+# QtCreator CMake
+CMakeLists.txt.user*
 
-!foo.html
+# QtCreator 4.8< compilation database
+compile_commands.json
 
-'#' Ignore objects and archives.
+# QtCreator local machine specific files for imported projects
+*creator.user*
 
-*.[oa]
-
-.idea/
-
-.target/
-
-.out/
+*_qmlcache.qrc

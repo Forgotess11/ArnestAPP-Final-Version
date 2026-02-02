@@ -1,19 +1,23 @@
-# OS files
-.DS_Store
-Thumbs.db
+'#' Lines starting with '#' are considered comments.
 
-# IDE
-.vscode/
+'#' Ignore any file named foo.txt.
+
+foo.txt
+
+'#' Ignore (generated) html files,
+
+*.html
+
+'#' except foo.html which is maintained by hand.
+
+!foo.html
+
+'#' Ignore objects and archives.
+
+*.[oa]
+
 .idea/
-*.swp
 
-# Dependencies
-node_modules/
-vendor/
-venv/
+.target/
 
-# Build
-dist/
-build/
-*.log
-*.env
+.out/
